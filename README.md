@@ -51,18 +51,23 @@ mvn apigee-config:apps apigee-config:apiproducts -Papigeeapi -Dorg=${org} -Denv=
 To deploy the sharedflow 
 
 ```sh
-mvn clean install -Pgoogleapi -Dorg=${org} -Denv=${env} -Dfile=${file} -Dapi.northbound.domain=${api.northbound.domain}
+mvn clean install -Pgoogleapi -Dorg=${org} -Denv=${env} \
+-Dfile=${file} -Dapi.northbound.domain=${api.northbound.domain}
 ```
 
 To test the sharedflow 
 
 ```sh
-mvn install -Pgoogleapi -Dorg=${org} -Denv=${env} -Dfile=${file} -Dapi.northbound.domain=${api.northbound.domain} -f test/integration/pom.xml
+mvn install -Pgoogleapi -Dorg=${org} -Denv=${env} \
+-Dfile=${file} -Dapi.northbound.domain=${api.northbound.domain} \
+-f test/integration/pom.xml
 ```
 
 To delete the Test API Products, Developer and App
 
 ```sh
-mvn apigee-config:apps apigee-config:apiproducts -Pgoogleapi -Dorg=${org} -Denv=${env} -Dfile=${file} -Dapi.northbound.domain=${api.northbound.domain} -Dapigee.config.options=delete -f test/integration/pom.xml
+mvn apigee-config:apps apigee-config:apiproducts -Pgoogleapi -Dorg=${org} -Denv=${env} \
+-Dfile=${file} -Dapi.northbound.domain=${api.northbound.domain} -Dapigee.config.options=delete \
+-f test/integration/pom.xml
 ```
 
