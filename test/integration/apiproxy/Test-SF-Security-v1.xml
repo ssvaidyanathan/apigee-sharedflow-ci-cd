@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="Test-SF-Security-v1">
+    <Basepaths>/test-sf-security-v1</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1620155084827</CreatedAt>
+    <CreatedBy>apigee-demo-admins-external@apigee.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>Test-SF-Security-v1</DisplayName>
+    <LastModifiedAt>1620155435984</LastModifiedAt>
+    <LastModifiedBy>apigee-demo-admins-external@apigee.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:65b2407cb23969fae0a055e031f6bdcc339e5e68d2ce820d1a9774f0b5462c97054a405789cfe0b36e3bdb975b5559acb81fe58c73a0c68444d067ddd22a6584:us-west-2</ManifestVersion>
+    <Policies>
+        <Policy>AM-Unauthorized</Policy>
+        <Policy>FC-Security</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
