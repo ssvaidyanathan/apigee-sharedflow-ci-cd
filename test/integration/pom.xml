@@ -77,7 +77,7 @@
 				<apigee.bearer>${bearer}</apigee.bearer> <!-- this takes precedence over service account file -->
 				<apigee.serviceaccount.file>${file}</apigee.serviceaccount.file>
 				<apigee.config.options>update</apigee.config.options>
-				<apigee.config.dir>./target/resources/edge</apigee.config.dir>
+				<apigee.config.dir>${basedir}/target/resources/edge</apigee.config.dir>
 				<api.northbound.domain>${api.northbound.domain}</api.northbound.domain>
 				<apigee.config.exportDir>${basedir}/target/test/integration</apigee.config.exportDir>
 				<api.testtag>~@wip</api.testtag>
@@ -151,11 +151,16 @@
 					<basedir>${target.root.dir}</basedir>
 					<includes>
 						<include>test/integration/test-config.json</include>
+						<include>resources/edge/org/apiProducts.json</include>
 					</includes>
 					<replacements>
 						<replacement>
 							<token>demo-test.apigee.net</token>
 							<value>${api.northbound.domain}</value>
+						</replacement>
+						<replacement>
+							<token>@env</token>
+							<value>${env}</value>
 						</replacement>
 					</replacements>
 				</configuration>

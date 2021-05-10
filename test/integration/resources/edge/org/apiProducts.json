@@ -15,7 +15,7 @@
             }
         ],
         "environments": [
-            "test", "prod"
+            "@env"
         ],
         "proxies": [
             "Test-SF-Security-v1"

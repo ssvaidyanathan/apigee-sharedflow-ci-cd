@@ -1,9 +1,9 @@
 [
     {
         "attributes": [],
-        "email": "grant@enterprise.com",
-        "firstName": "Grant",
-        "lastName": "Smith",
-        "userName": "grantsmith"
+        "email": "sharedflowtestuser@enterprise.com",
+        "firstName": "SharedFlow",
+        "lastName": "TestUser",
+        "userName": "sharedflowtestuser"
     }
 ]
