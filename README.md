@@ -25,7 +25,9 @@ This example deploys the Sharedflow to Apigee. To test the sharedflow, the test 
 
 To deploy the sharedflow 
 
-```mvn clean install -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -Dpassword=${password}```
+```sh
+mvn clean install -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -Dpassword=${password}
+```
 
 To test the sharedflow 
 
