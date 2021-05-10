@@ -31,24 +31,34 @@ mvn clean install -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -
 
 To test the sharedflow 
 
-```mvn install -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -Dpassword=${password} -f test/integration/pom.xml```
+```sh
+mvn install -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -Dpassword=${password} -f test/integration/pom.xml
+```
 
 To delete the Test API Products, Developer and App
 
-```mvn apigee-config:apps apigee-config:apiproducts -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -Dpassword=${password} -Dapigee.config.options=delete -f test/integration/pom.xml```
+```sh
+mvn apigee-config:apps apigee-config:apiproducts -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -Dpassword=${password} -Dapigee.config.options=delete -f test/integration/pom.xml
+```
 
 
 ### Apigee X / hybrid
 
 To deploy the sharedflow 
 
-	- Execute `mvn clean install -Pgoogleapi -Dorg=${org} -Denv=${env} -Dfile=${file} -Dapi.northbound.domain=${api.northbound.domain}`
+```sh
+mvn clean install -Pgoogleapi -Dorg=${org} -Denv=${env} -Dfile=${file} -Dapi.northbound.domain=${api.northbound.domain}
+```
 
 To test the sharedflow 
 
-	- Execute `mvn install -Pgoogleapi -Dorg=${org} -Denv=${env} -Dfile=${file} -Dapi.northbound.domain=${api.northbound.domain} -f test/integration/pom.xml`
+```sh
+mvn install -Pgoogleapi -Dorg=${org} -Denv=${env} -Dfile=${file} -Dapi.northbound.domain=${api.northbound.domain} -f test/integration/pom.xml
+```
 
 To delete the Test API Products, Developer and App
 
-	- Execute `mvn apigee-config:apps apigee-config:apiproducts -Pgoogleapi -Dorg=${org} -Denv=${env} -Dfile=${file} -Dapi.northbound.domain=${api.northbound.domain} -Dapigee.config.options=delete -f test/integration/pom.xml`
+```sh
+mvn apigee-config:apps apigee-config:apiproducts -Pgoogleapi -Dorg=${org} -Denv=${env} -Dfile=${file} -Dapi.northbound.domain=${api.northbound.domain} -Dapigee.config.options=delete -f test/integration/pom.xml
+```
 
