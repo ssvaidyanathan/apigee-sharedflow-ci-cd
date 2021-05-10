@@ -24,13 +24,16 @@ This example deploys the Sharedflow to Apigee. To test the sharedflow, the test 
 ### Apigee Edge
 
 To deploy the sharedflow 
-	- Execute ```mvn clean install -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -Dpassword=${password}```
+	- Execute 
+	```mvn clean install -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -Dpassword=${password}```
 
 To test the sharedflow 
-	- Execute ```mvn install -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -Dpassword=${password} -f test/integration/pom.xml```
+	- Execute 
+	```mvn install -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -Dpassword=${password} -f test/integration/pom.xml```
 
 To delete the Test API Products, Developer and App
-	- Execute ```mvn apigee-config:apps apigee-config:apiproducts apigee-config:developers -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -Dpassword=${password} -Dapigee.config.options=delete -f test/integration/pom.xml```
+	- Execute 
+	```mvn apigee-config:apps apigee-config:apiproducts apigee-config:developers -Papigeeapi -Dorg=${org} -Denv=${env} -Dusername=${username} -Dpassword=${password} -Dapigee.config.options=delete -f test/integration/pom.xml```
 
 
 ### Apigee X / hybrid
