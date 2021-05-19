@@ -1,5 +1,5 @@
 {
-	"name": "currency-v1",
+	"name": "apigee-sharedflow-ci-cd",
 	"version": "1.0.0",
 	"devDependencies": {
 		"prettyjson": ">=1.1.3",
